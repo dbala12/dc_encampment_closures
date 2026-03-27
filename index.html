@@ -1,0 +1,1142 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Washington D.C. Encampment Closure Tracker (2025)</title>
+    <style>
+        body { font-family: 'Helvetica', sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; }
+        .header { background-color: #2c3e50; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .content { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 24px; }
+        p { line-height: 1.6; color: #34495e; }
+        .map-container { height: 600px; margin-top: 20px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Washington D.C. Encampment Closure Tracker (2025)</h1>
+    </div>
+    <div class="content">
+        
+<p>This interactive map tracks municipal encampment cleanup and enforcement activities across the District. 
+Data is categorized by the type of engagement, including full clean-ups, bio-hazard removals, and safety enforcements. 
+Click on any marker to see the date, specific location, and associated Ward.</p>
+
+        <div class="map-container">
+            <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_24d151ae4bafb2a0ec9e259dc0361ef7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_24d151ae4bafb2a0ec9e259dc0361ef7&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_24d151ae4bafb2a0ec9e259dc0361ef7 = L.map(
+                &quot;map_24d151ae4bafb2a0ec9e259dc0361ef7&quot;,
+                {
+                    center: [38.9072, -77.0369],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 13,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f2095a85ac17a5f7b922cc55a2ead2dc = L.tileLayer(
+                &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 20,
+  &quot;maxNativeZoom&quot;: 20,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\&quot;https://carto.com/attributions\&quot;\u003eCARTO\u003c/a\u003e&quot;,
+  &quot;subdomains&quot;: &quot;abcd&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_f2095a85ac17a5f7b922cc55a2ead2dc.addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+            var circle_marker_f8f8a8c0b205060e23afa400b3b4deaf = L.circleMarker(
+                [38.8963209, -77.045018],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_dfdcb3dcaee56ea6fc7650b24656e7e2 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_0fec9153b001101e6d04e813e130d708 = $(`&lt;div id=&quot;html_0fec9153b001101e6d04e813e130d708&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 02.28.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 20th and E St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_dfdcb3dcaee56ea6fc7650b24656e7e2.setContent(html_0fec9153b001101e6d04e813e130d708);
+            
+        
+
+        circle_marker_f8f8a8c0b205060e23afa400b3b4deaf.bindPopup(popup_dfdcb3dcaee56ea6fc7650b24656e7e2)
+        ;
+
+        
+    
+    
+            var circle_marker_58563467e5c7bcb0168ef3c0e558c977 = L.circleMarker(
+                [38.8961214, -77.0497479],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_e98bf9a722c95ba781013bc99baed262 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_8de4caf3939befdad8a91bbb047abb2a = $(`&lt;div id=&quot;html_8de4caf3939befdad8a91bbb047abb2a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 02.28.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 23rd and E St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this DDOT space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_e98bf9a722c95ba781013bc99baed262.setContent(html_8de4caf3939befdad8a91bbb047abb2a);
+            
+        
+
+        circle_marker_58563467e5c7bcb0168ef3c0e558c977.bindPopup(popup_e98bf9a722c95ba781013bc99baed262)
+        ;
+
+        
+    
+    
+            var circle_marker_a8736318431fef7908fa5dff37222a09 = L.circleMarker(
+                [38.9197775, -76.9743058],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_6ce92eba37fc2a2a2fbbfb6a8edf3423 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_c2e9666a8e7f9a861eb8798b53bb08e1 = $(`&lt;div id=&quot;html_c2e9666a8e7f9a861eb8798b53bb08e1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 03.04.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 2230 Adams Place NE &lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 5     &lt;/div&gt;`)[0];
+                popup_6ce92eba37fc2a2a2fbbfb6a8edf3423.setContent(html_c2e9666a8e7f9a861eb8798b53bb08e1);
+            
+        
+
+        circle_marker_a8736318431fef7908fa5dff37222a09.bindPopup(popup_6ce92eba37fc2a2a2fbbfb6a8edf3423)
+        ;
+
+        
+    
+    
+            var circle_marker_2ebc76eb2e0165fc7f778a5a87c0c3f9 = L.circleMarker(
+                [38.9098497, -77.034438],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_363a67d932cd12dee7ed5feca1192cae = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_89506062245b458047ec79a3348f0f0c = $(`&lt;div id=&quot;html_89506062245b458047ec79a3348f0f0c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 03.13.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 15th and P St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_363a67d932cd12dee7ed5feca1192cae.setContent(html_89506062245b458047ec79a3348f0f0c);
+            
+        
+
+        circle_marker_2ebc76eb2e0165fc7f778a5a87c0c3f9.bindPopup(popup_363a67d932cd12dee7ed5feca1192cae)
+        ;
+
+        
+    
+    
+            var circle_marker_f6bf72b7df0d5460514920ff78e7092e = L.circleMarker(
+                [38.8992918, -77.0324806],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_032390c098f99e5288eceaf64f02b36f = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_712a511d7c1ab2e2e8e17fb858afb708 = $(`&lt;div id=&quot;html_712a511d7c1ab2e2e8e17fb858afb708&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 03.19.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 1425 New York Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_032390c098f99e5288eceaf64f02b36f.setContent(html_712a511d7c1ab2e2e8e17fb858afb708);
+            
+        
+
+        circle_marker_f6bf72b7df0d5460514920ff78e7092e.bindPopup(popup_032390c098f99e5288eceaf64f02b36f)
+        ;
+
+        
+    
+    
+            var circle_marker_da1023df712f30838fa76e5928c76c0b = L.circleMarker(
+                [38.9288851, -77.0376476],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_9de55fb907acb8385d2403af49d87eda = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_14f35185a48c361d3231664c4e662b16 = $(`&lt;div id=&quot;html_14f35185a48c361d3231664c4e662b16&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 04.03.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3100 Mt. Pleasant St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 1     &lt;/div&gt;`)[0];
+                popup_9de55fb907acb8385d2403af49d87eda.setContent(html_14f35185a48c361d3231664c4e662b16);
+            
+        
+
+        circle_marker_da1023df712f30838fa76e5928c76c0b.bindPopup(popup_9de55fb907acb8385d2403af49d87eda)
+        ;
+
+        
+    
+    
+            var circle_marker_c90e65da0c9ee672a0e2c2958c0b7bd3 = L.circleMarker(
+                [38.8964838, -77.0333358],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_90170c20ed01d8f4424bcf480778fc8e = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_d1ff3d836a1c664f6e6ff67246017cb4 = $(`&lt;div id=&quot;html_d1ff3d836a1c664f6e6ff67246017cb4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 04.22.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 15th and Pennsylvania Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_90170c20ed01d8f4424bcf480778fc8e.setContent(html_d1ff3d836a1c664f6e6ff67246017cb4);
+            
+        
+
+        circle_marker_c90e65da0c9ee672a0e2c2958c0b7bd3.bindPopup(popup_90170c20ed01d8f4424bcf480778fc8e)
+        ;
+
+        
+    
+    
+            var circle_marker_12c811f183f0471a1175cd61f3bcc285 = L.circleMarker(
+                [38.9288851, -77.0376476],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_20d586f68c99abc54f694697eda2edf7 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_022a749c21ba5b9ebd58155e28ca99aa = $(`&lt;div id=&quot;html_022a749c21ba5b9ebd58155e28ca99aa&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 04.30.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3100 Mt. Pleasant St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 1     &lt;/div&gt;`)[0];
+                popup_20d586f68c99abc54f694697eda2edf7.setContent(html_022a749c21ba5b9ebd58155e28ca99aa);
+            
+        
+
+        circle_marker_12c811f183f0471a1175cd61f3bcc285.bindPopup(popup_20d586f68c99abc54f694697eda2edf7)
+        ;
+
+        
+    
+    
+            var circle_marker_759a9d6919901cdd541b23972a6924bc = L.circleMarker(
+                [38.8961214, -77.0497479],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_0442309900946697944633b0028d377d = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_a2d08a3a3e008791ffa83537dbdfbb9b = $(`&lt;div id=&quot;html_a2d08a3a3e008791ffa83537dbdfbb9b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 05.07.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 23rd and E St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this DDOT/public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_0442309900946697944633b0028d377d.setContent(html_a2d08a3a3e008791ffa83537dbdfbb9b);
+            
+        
+
+        circle_marker_759a9d6919901cdd541b23972a6924bc.bindPopup(popup_0442309900946697944633b0028d377d)
+        ;
+
+        
+    
+    
+            var circle_marker_fe27e67f82abc7b50e8019efac054bd5 = L.circleMarker(
+                [38.9364401, -77.0594008],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_70e172c1b125bf430585e46b9c1abb39 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_f4e3ce19b3376e40241b221b0c5cd416 = $(`&lt;div id=&quot;html_f4e3ce19b3376e40241b221b0c5cd416&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 05.15.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3524 Connecticut Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 3     &lt;/div&gt;`)[0];
+                popup_70e172c1b125bf430585e46b9c1abb39.setContent(html_f4e3ce19b3376e40241b221b0c5cd416);
+            
+        
+
+        circle_marker_fe27e67f82abc7b50e8019efac054bd5.bindPopup(popup_70e172c1b125bf430585e46b9c1abb39)
+        ;
+
+        
+    
+    
+            var circle_marker_16546e4177bb02039affb1e9760299ac = L.circleMarker(
+                [38.900331, -77.003457],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_7dffff46f293fb594e2c794f64d95005 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_fa1fd876f35c455aca6b68aab49b2d5f = $(`&lt;div id=&quot;html_fa1fd876f35c455aca6b68aab49b2d5f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 05.20.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 801 2nd St NE&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 5     &lt;/div&gt;`)[0];
+                popup_7dffff46f293fb594e2c794f64d95005.setContent(html_fa1fd876f35c455aca6b68aab49b2d5f);
+            
+        
+
+        circle_marker_16546e4177bb02039affb1e9760299ac.bindPopup(popup_7dffff46f293fb594e2c794f64d95005)
+        ;
+
+        
+    
+    
+            var circle_marker_2e2e445f9ac645d0423cded7737082a9 = L.circleMarker(
+                [38.898722, -77.0256605],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_27dd844ebae6e502a0a85e214afa8af3 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_4ee233a941e1d64aa537f23e7176a582 = $(`&lt;div id=&quot;html_4ee233a941e1d64aa537f23e7176a582&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 05.29.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 945 G St NW / MLK Library&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_27dd844ebae6e502a0a85e214afa8af3.setContent(html_4ee233a941e1d64aa537f23e7176a582);
+            
+        
+
+        circle_marker_2e2e445f9ac645d0423cded7737082a9.bindPopup(popup_27dd844ebae6e502a0a85e214afa8af3)
+        ;
+
+        
+    
+    
+            var circle_marker_22446ae18e62e239b28c25ce3b1feafd = L.circleMarker(
+                [38.8767492, -76.9776487],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_fe8be10f5cc38ed9148736944d95c542 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_2b8b8df6f7635a113627738eb09da1f4 = $(`&lt;div id=&quot;html_2b8b8df6f7635a113627738eb09da1f4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 06.03.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; Pennsylvania Ave SE/Souza Bridge (DDOT Bridge)&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this DDOT space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; ?     &lt;/div&gt;`)[0];
+                popup_fe8be10f5cc38ed9148736944d95c542.setContent(html_2b8b8df6f7635a113627738eb09da1f4);
+            
+        
+
+        circle_marker_22446ae18e62e239b28c25ce3b1feafd.bindPopup(popup_fe8be10f5cc38ed9148736944d95c542)
+        ;
+
+        
+    
+    
+            var circle_marker_8fdecc1f7f2d415a50114fa0b14b1c84 = L.circleMarker(
+                [38.9197775, -76.9743058],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_b17af8d3c96693a0aa9770d6e6e0ccf3 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_ab6e51a743dd7bfb7b83cc2e574d6868 = $(`&lt;div id=&quot;html_ab6e51a743dd7bfb7b83cc2e574d6868&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 06.11.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 2230 Adams Place NE &lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns Rescheduled from 5/28/25 due to weather&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 5     &lt;/div&gt;`)[0];
+                popup_b17af8d3c96693a0aa9770d6e6e0ccf3.setContent(html_ab6e51a743dd7bfb7b83cc2e574d6868);
+            
+        
+
+        circle_marker_8fdecc1f7f2d415a50114fa0b14b1c84.bindPopup(popup_b17af8d3c96693a0aa9770d6e6e0ccf3)
+        ;
+
+        
+    
+    
+            var circle_marker_34712b0b5f48a6ceafc82c5c6ef8d7e8 = L.circleMarker(
+                [38.9309188, -77.0385458],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_197ee11a36ff978b12f3990bc071cdea = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_ea8436b311abed72ce24e59905722cc8 = $(`&lt;div id=&quot;html_ea8436b311abed72ce24e59905722cc8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 06.17.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3178 Mt. Pleasant St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Cancelled&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 1     &lt;/div&gt;`)[0];
+                popup_197ee11a36ff978b12f3990bc071cdea.setContent(html_ea8436b311abed72ce24e59905722cc8);
+            
+        
+
+        circle_marker_34712b0b5f48a6ceafc82c5c6ef8d7e8.bindPopup(popup_197ee11a36ff978b12f3990bc071cdea)
+        ;
+
+        
+    
+    
+            var circle_marker_d3d0e3eb49401d426e308ce71325a8c6 = L.circleMarker(
+                [38.9086508, -77.0123673],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_05c2bea146b38e8400f8766f1f3ee513 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_4d5b6f75a5952e6321ca0cd064683579 = $(`&lt;div id=&quot;html_4d5b6f75a5952e6321ca0cd064683579&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 07.03.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 1st and C/2nd and D St NW (DDOT Tunnels)&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this DDOT space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 6     &lt;/div&gt;`)[0];
+                popup_05c2bea146b38e8400f8766f1f3ee513.setContent(html_4d5b6f75a5952e6321ca0cd064683579);
+            
+        
+
+        circle_marker_d3d0e3eb49401d426e308ce71325a8c6.bindPopup(popup_05c2bea146b38e8400f8766f1f3ee513)
+        ;
+
+        
+    
+    
+            var circle_marker_c33ca4930e5438199edffc2d18981a72 = L.circleMarker(
+                [38.8961214, -77.0497479],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_86ff01ac78c4e8334a48a67bf9faec3e = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_3fe6839e1a036a3fa28c82e5ac406ca8 = $(`&lt;div id=&quot;html_3fe6839e1a036a3fa28c82e5ac406ca8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 07.09.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 23rd and E&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_86ff01ac78c4e8334a48a67bf9faec3e.setContent(html_3fe6839e1a036a3fa28c82e5ac406ca8);
+            
+        
+
+        circle_marker_c33ca4930e5438199edffc2d18981a72.bindPopup(popup_86ff01ac78c4e8334a48a67bf9faec3e)
+        ;
+
+        
+    
+    
+            var circle_marker_026ac830252bf45996a98dfbceb4efc1 = L.circleMarker(
+                [38.9014816, -77.0588124],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_09bcbeda2846b5fc2862bfe41c5c8ccc = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_29da2748eade49dbe32bcfecd0ec2db4 = $(`&lt;div id=&quot;html_29da2748eade49dbe32bcfecd0ec2db4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 07.10.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 2900 K St. NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_09bcbeda2846b5fc2862bfe41c5c8ccc.setContent(html_29da2748eade49dbe32bcfecd0ec2db4);
+            
+        
+
+        circle_marker_026ac830252bf45996a98dfbceb4efc1.bindPopup(popup_09bcbeda2846b5fc2862bfe41c5c8ccc)
+        ;
+
+        
+    
+    
+            var circle_marker_0e84dc802b8901f545b28a7f1df9a7c5 = L.circleMarker(
+                [38.9000408, -76.9983188],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_80b9eab1454449c030d0e8c26b022715 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_259bb88aba94a3a55607bef8ffa9ae46 = $(`&lt;div id=&quot;html_259bb88aba94a3a55607bef8ffa9ae46&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 08.07.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 6th and H St NE&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 6     &lt;/div&gt;`)[0];
+                popup_80b9eab1454449c030d0e8c26b022715.setContent(html_259bb88aba94a3a55607bef8ffa9ae46);
+            
+        
+
+        circle_marker_0e84dc802b8901f545b28a7f1df9a7c5.bindPopup(popup_80b9eab1454449c030d0e8c26b022715)
+        ;
+
+        
+    
+    
+            var circle_marker_d5dbc8ad1d8030ef08e5d35b2ed94d67 = L.circleMarker(
+                [38.9288851, -77.0376476],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_515b230784e2843657e3791fa42edb67 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_0ac98b3442bb940d00aec62a1049ab5f = $(`&lt;div id=&quot;html_0ac98b3442bb940d00aec62a1049ab5f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 08.20.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3100 Mt. Pleasant St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 1     &lt;/div&gt;`)[0];
+                popup_515b230784e2843657e3791fa42edb67.setContent(html_0ac98b3442bb940d00aec62a1049ab5f);
+            
+        
+
+        circle_marker_d5dbc8ad1d8030ef08e5d35b2ed94d67.bindPopup(popup_515b230784e2843657e3791fa42edb67)
+        ;
+
+        
+    
+    
+            var circle_marker_4af7d124cd65da5b5e274c249bda0fde = L.circleMarker(
+                [38.8850864, -76.9964793],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_e1ea1abaf702195726238f69d3021065 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_328540d3c63201043420dbfc6972fe51 = $(`&lt;div id=&quot;html_328540d3c63201043420dbfc6972fe51&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 08.21.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 660 Pennsylvania Ave SE&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 6     &lt;/div&gt;`)[0];
+                popup_e1ea1abaf702195726238f69d3021065.setContent(html_328540d3c63201043420dbfc6972fe51);
+            
+        
+
+        circle_marker_4af7d124cd65da5b5e274c249bda0fde.bindPopup(popup_e1ea1abaf702195726238f69d3021065)
+        ;
+
+        
+    
+    
+            var circle_marker_efb2eb23c817056eb9e7a0f14eb42ca7 = L.circleMarker(
+                [38.9359448, -77.0586113],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_681202d5983490049b0f7b3343462a10 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_09d913bab62c29c08fee738a082a1074 = $(`&lt;div id=&quot;html_09d913bab62c29c08fee738a082a1074&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 09.02.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3523 Connecticut Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Cleanup  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 3     &lt;/div&gt;`)[0];
+                popup_681202d5983490049b0f7b3343462a10.setContent(html_09d913bab62c29c08fee738a082a1074);
+            
+        
+
+        circle_marker_efb2eb23c817056eb9e7a0f14eb42ca7.bindPopup(popup_681202d5983490049b0f7b3343462a10)
+        ;
+
+        
+    
+    
+            var circle_marker_0605a30ebd9a5e817546f58fb75b389b = L.circleMarker(
+                [38.9221431, -77.0712033],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_9457999207bbbbd75f8e7b6f41aeac22 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_233c9db78801a06cfd7bbc3b5813ab5b = $(`&lt;div id=&quot;html_233c9db78801a06cfd7bbc3b5813ab5b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 09.04.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3600 Calvert St NW/Guy Mason Rec Cente&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Cleanup  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 3     &lt;/div&gt;`)[0];
+                popup_9457999207bbbbd75f8e7b6f41aeac22.setContent(html_233c9db78801a06cfd7bbc3b5813ab5b);
+            
+        
+
+        circle_marker_0605a30ebd9a5e817546f58fb75b389b.bindPopup(popup_9457999207bbbbd75f8e7b6f41aeac22)
+        ;
+
+        
+    
+    
+            var circle_marker_c7f91582f612916f857e0fd426178df5 = L.circleMarker(
+                [38.8684225, -77.0056438],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_ab25aef9724c763952851a62bedf65eb = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_4ebd49c8bd4ad357fe009880984f035e = $(`&lt;div id=&quot;html_4ebd49c8bd4ad357fe009880984f035e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 09.12.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 550 South Capitol St SW/395 South Expressway&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Cleanup  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 6     &lt;/div&gt;`)[0];
+                popup_ab25aef9724c763952851a62bedf65eb.setContent(html_4ebd49c8bd4ad357fe009880984f035e);
+            
+        
+
+        circle_marker_c7f91582f612916f857e0fd426178df5.bindPopup(popup_ab25aef9724c763952851a62bedf65eb)
+        ;
+
+        
+    
+    
+            var circle_marker_b261359e1a5708799e2b1c2f00c20c56 = L.circleMarker(
+                [38.955806, -77.092086],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_012f46cc26a65cc2f36f58cb427c484e = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_6351f943ad6d0e23e244021e70564760 = $(`&lt;div id=&quot;html_6351f943ad6d0e23e244021e70564760&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 09.18.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3500 Western Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Cleanup  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 3     &lt;/div&gt;`)[0];
+                popup_012f46cc26a65cc2f36f58cb427c484e.setContent(html_6351f943ad6d0e23e244021e70564760);
+            
+        
+
+        circle_marker_b261359e1a5708799e2b1c2f00c20c56.bindPopup(popup_012f46cc26a65cc2f36f58cb427c484e)
+        ;
+
+        
+    
+    
+            var circle_marker_aed1c981444748af4c6fa8b25780e1b3 = L.circleMarker(
+                [38.9613165, -77.0278078],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_4eb454a27112ce857b842ded2b16232b = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_6bd4a40876b70cb726f35340d51a6307 = $(`&lt;div id=&quot;html_6bd4a40876b70cb726f35340d51a6307&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 09.24.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; Georgia and Missouri Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 4     &lt;/div&gt;`)[0];
+                popup_4eb454a27112ce857b842ded2b16232b.setContent(html_6bd4a40876b70cb726f35340d51a6307);
+            
+        
+
+        circle_marker_aed1c981444748af4c6fa8b25780e1b3.bindPopup(popup_4eb454a27112ce857b842ded2b16232b)
+        ;
+
+        
+    
+    
+            var circle_marker_4a1c7757f31e0629d8f41fcc4b3ad246 = L.circleMarker(
+                [38.8773387, -76.9954561],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_467acf51a0dfac8b94dbcca50dcbe1fb = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_08740b4b1edc2f786f74dc0539802d0f = $(`&lt;div id=&quot;html_08740b4b1edc2f786f74dc0539802d0f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 09.30.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 701 L St SE/8th and L St SE&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 8     &lt;/div&gt;`)[0];
+                popup_467acf51a0dfac8b94dbcca50dcbe1fb.setContent(html_08740b4b1edc2f786f74dc0539802d0f);
+            
+        
+
+        circle_marker_4a1c7757f31e0629d8f41fcc4b3ad246.bindPopup(popup_467acf51a0dfac8b94dbcca50dcbe1fb)
+        ;
+
+        
+    
+    
+            var circle_marker_6aea252ba0bab72103e97600b4e48a9d = L.circleMarker(
+                [38.8657048, -76.9850569],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_fcd7ebf0c44c684b46829419af38bf2e = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_20e8a45ccd3865a99694d96e052d4837 = $(`&lt;div id=&quot;html_20e8a45ccd3865a99694d96e052d4837&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.01.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 2002 14th St SE&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 8     &lt;/div&gt;`)[0];
+                popup_fcd7ebf0c44c684b46829419af38bf2e.setContent(html_20e8a45ccd3865a99694d96e052d4837);
+            
+        
+
+        circle_marker_6aea252ba0bab72103e97600b4e48a9d.bindPopup(popup_fcd7ebf0c44c684b46829419af38bf2e)
+        ;
+
+        
+    
+    
+            var circle_marker_d07296a112e341344bc71a503d7ef579 = L.circleMarker(
+                [38.9107727, -76.9860082],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_4aeae726d53fcd10ca346ab26a1a43c4 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_f33d15c6db0e2333be5aa2748f0f5d04 = $(`&lt;div id=&quot;html_f33d15c6db0e2333be5aa2748f0f5d04&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.03.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 1801 Capitol Ave NE&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 5     &lt;/div&gt;`)[0];
+                popup_4aeae726d53fcd10ca346ab26a1a43c4.setContent(html_f33d15c6db0e2333be5aa2748f0f5d04);
+            
+        
+
+        circle_marker_d07296a112e341344bc71a503d7ef579.bindPopup(popup_4aeae726d53fcd10ca346ab26a1a43c4)
+        ;
+
+        
+    
+    
+            var circle_marker_e414fc6f022b0e83d4fb1b9d3a7eba4d = L.circleMarker(
+                [38.9028088, -77.0606226],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_0f3adae7050b8bd427dfc26a89729e17 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_928e7a3dab2765e4c782b3ff68b3d777 = $(`&lt;div id=&quot;html_928e7a3dab2765e4c782b3ff68b3d777&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.03.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 1000 Thomas Jefferson St NW/Georgetown Waterfront&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_0f3adae7050b8bd427dfc26a89729e17.setContent(html_928e7a3dab2765e4c782b3ff68b3d777);
+            
+        
+
+        circle_marker_e414fc6f022b0e83d4fb1b9d3a7eba4d.bindPopup(popup_0f3adae7050b8bd427dfc26a89729e17)
+        ;
+
+        
+    
+    
+            var circle_marker_7b8e76c24dfb59508760fc5b2c22241a = L.circleMarker(
+                [38.9090309, -77.0342496],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_fb1d2fecddbef4893e3a978ea3810456 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_5021ddf3627f2f6a750a96499a5b79fb = $(`&lt;div id=&quot;html_5021ddf3627f2f6a750a96499a5b79fb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.14.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 1401 15th St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_fb1d2fecddbef4893e3a978ea3810456.setContent(html_5021ddf3627f2f6a750a96499a5b79fb);
+            
+        
+
+        circle_marker_7b8e76c24dfb59508760fc5b2c22241a.bindPopup(popup_fb1d2fecddbef4893e3a978ea3810456)
+        ;
+
+        
+    
+    
+            var circle_marker_f7ebf713091df7e7d4301e86f1a0f610 = L.circleMarker(
+                [38.9452876, -77.0317177],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_4ce54f2343935855a6bedf80dc53d72f = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_0afb499fc8fa7ab6b61dd2755ed48732 = $(`&lt;div id=&quot;html_0afb499fc8fa7ab6b61dd2755ed48732&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.15.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 4510 Arkansas Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 4     &lt;/div&gt;`)[0];
+                popup_4ce54f2343935855a6bedf80dc53d72f.setContent(html_0afb499fc8fa7ab6b61dd2755ed48732);
+            
+        
+
+        circle_marker_f7ebf713091df7e7d4301e86f1a0f610.bindPopup(popup_4ce54f2343935855a6bedf80dc53d72f)
+        ;
+
+        
+    
+    
+            var circle_marker_ede67fffec2a5d6679e3a5c4e27d78c2 = L.circleMarker(
+                [38.96348, -77.0824334],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_7d330a9740a215ec32870f2d273d8c4b = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_7d4d5744eeeda7fa4a9230e8c53de5b5 = $(`&lt;div id=&quot;html_7d4d5744eeeda7fa4a9230e8c53de5b5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.16.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 5460 Western Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 3     &lt;/div&gt;`)[0];
+                popup_7d330a9740a215ec32870f2d273d8c4b.setContent(html_7d4d5744eeeda7fa4a9230e8c53de5b5);
+            
+        
+
+        circle_marker_ede67fffec2a5d6679e3a5c4e27d78c2.bindPopup(popup_7d330a9740a215ec32870f2d273d8c4b)
+        ;
+
+        
+    
+    
+            var circle_marker_3b484a56be5464e2257fe1caf868dd0d = L.circleMarker(
+                [38.900774, -77.051986],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_56f22053cee1be69404d2d14b6c6a586 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_2161da42ebbea77752c0f9f26438eb59 = $(`&lt;div id=&quot;html_2161da42ebbea77752c0f9f26438eb59&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.16.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 2401 I St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_56f22053cee1be69404d2d14b6c6a586.setContent(html_2161da42ebbea77752c0f9f26438eb59);
+            
+        
+
+        circle_marker_3b484a56be5464e2257fe1caf868dd0d.bindPopup(popup_56f22053cee1be69404d2d14b6c6a586)
+        ;
+
+        
+    
+    
+            var circle_marker_86d5b1df7ffe8d13e5f4a2a5e045dda1 = L.circleMarker(
+                [38.9028088, -77.0606226],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_9910510a89c72535f1338ae6b5e8ec97 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_1e949625519164bddfd6c8c209016e18 = $(`&lt;div id=&quot;html_1e949625519164bddfd6c8c209016e18&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.28.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 1000 Thomas Jefferson St NW/Georgetown Waterfront&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_9910510a89c72535f1338ae6b5e8ec97.setContent(html_1e949625519164bddfd6c8c209016e18);
+            
+        
+
+        circle_marker_86d5b1df7ffe8d13e5f4a2a5e045dda1.bindPopup(popup_9910510a89c72535f1338ae6b5e8ec97)
+        ;
+
+        
+    
+    
+            var circle_marker_142ecd4e81884552fb9f191f676fe431 = L.circleMarker(
+                [38.9005421, -77.0311194],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_e1f5924427b46e3aad774f5aa73fb9ef = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_2d7890563ba314ce511769a963c4fda0 = $(`&lt;div id=&quot;html_2d7890563ba314ce511769a963c4fda0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 10.29.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 1333 H St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_e1f5924427b46e3aad774f5aa73fb9ef.setContent(html_2d7890563ba314ce511769a963c4fda0);
+            
+        
+
+        circle_marker_142ecd4e81884552fb9f191f676fe431.bindPopup(popup_e1f5924427b46e3aad774f5aa73fb9ef)
+        ;
+
+        
+    
+    
+            var circle_marker_aab9d494f3f5261d2ab3a57f4b9b5096 = L.circleMarker(
+                [38.9525866, -77.0814373],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_1b779fb89211096939d312b15832454c = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_f092c8579891d69ce365334d1bb1f0d8 = $(`&lt;div id=&quot;html_f092c8579891d69ce365334d1bb1f0d8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 11.13.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 4859 Wisconsin Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Cleanup Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 3     &lt;/div&gt;`)[0];
+                popup_1b779fb89211096939d312b15832454c.setContent(html_f092c8579891d69ce365334d1bb1f0d8);
+            
+        
+
+        circle_marker_aab9d494f3f5261d2ab3a57f4b9b5096.bindPopup(popup_1b779fb89211096939d312b15832454c)
+        ;
+
+        
+    
+    
+            var circle_marker_9870c75ec5587f5732a808e0bdeb893d = L.circleMarker(
+                [38.9359448, -77.0586113],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_f8fea65dd0113de1110bd6b39269b76c = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_a24645d0bee081c79482a9e8a9dfb3e2 = $(`&lt;div id=&quot;html_a24645d0bee081c79482a9e8a9dfb3e2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 11.13.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3523 Connecticut Ave NW/Cleaveland Park Metro&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Cleanup  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 3     &lt;/div&gt;`)[0];
+                popup_f8fea65dd0113de1110bd6b39269b76c.setContent(html_a24645d0bee081c79482a9e8a9dfb3e2);
+            
+        
+
+        circle_marker_9870c75ec5587f5732a808e0bdeb893d.bindPopup(popup_f8fea65dd0113de1110bd6b39269b76c)
+        ;
+
+        
+    
+    
+            var circle_marker_0a98e89cfcfb06039607e55c678ea532 = L.circleMarker(
+                [38.913642, -77.0226282],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_5d90df6049e7a3e3cc31019d777e1272 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_cc9338199db966abb706479108965eb8 = $(`&lt;div id=&quot;html_cc9338199db966abb706479108965eb8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 11.19.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 1711 8th St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Cleanup  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_5d90df6049e7a3e3cc31019d777e1272.setContent(html_cc9338199db966abb706479108965eb8);
+            
+        
+
+        circle_marker_0a98e89cfcfb06039607e55c678ea532.bindPopup(popup_5d90df6049e7a3e3cc31019d777e1272)
+        ;
+
+        
+    
+    
+            var circle_marker_64520bbcc692837d7e7716a7f13a936c = L.circleMarker(
+                [38.879196, -77.00503],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_68364ff63818fabacab66dd60975a9f5 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_e89e7c696befd08fe64397423b8dc161 = $(`&lt;div id=&quot;html_e89e7c696befd08fe64397423b8dc161&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 12.16.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 900 New Jersey Ave / 2nd and New Jersey Ave NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns Rescheduled from 12/3 due to the cold weather alert&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 6     &lt;/div&gt;`)[0];
+                popup_68364ff63818fabacab66dd60975a9f5.setContent(html_e89e7c696befd08fe64397423b8dc161);
+            
+        
+
+        circle_marker_64520bbcc692837d7e7716a7f13a936c.bindPopup(popup_68364ff63818fabacab66dd60975a9f5)
+        ;
+
+        
+    
+    
+            var circle_marker_db07476b78aeb3dff7fe54ccdc5275e8 = L.circleMarker(
+                [38.8946294, -77.0013589],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_0bdea0962ae3d18fac9d5614918d45b3 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_830936dfa08537badc338a3b2e9e7bed = $(`&lt;div id=&quot;html_830936dfa08537badc338a3b2e9e7bed&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 12.16.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 300 Massachusetts Ave NE&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns Rescheduled from 12/3 due to the cold weather alert&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 6     &lt;/div&gt;`)[0];
+                popup_0bdea0962ae3d18fac9d5614918d45b3.setContent(html_830936dfa08537badc338a3b2e9e7bed);
+            
+        
+
+        circle_marker_db07476b78aeb3dff7fe54ccdc5275e8.bindPopup(popup_0bdea0962ae3d18fac9d5614918d45b3)
+        ;
+
+        
+    
+    
+            var circle_marker_71229b4594257e2eb040ffedb73ad36e = L.circleMarker(
+                [38.9049646, -77.0656041],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_5d3f5ee4c2553b67a23349b95b0e5be3 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_a2cbb114277845af3d7472eadc1db6d0 = $(`&lt;div id=&quot;html_a2cbb114277845af3d7472eadc1db6d0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 12.17.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3282 M St NW / Potomac Ave and M St NW&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns Rescheduled from 12/4 due to the cold weather alert&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 2     &lt;/div&gt;`)[0];
+                popup_5d3f5ee4c2553b67a23349b95b0e5be3.setContent(html_a2cbb114277845af3d7472eadc1db6d0);
+            
+        
+
+        circle_marker_71229b4594257e2eb040ffedb73ad36e.bindPopup(popup_5d3f5ee4c2553b67a23349b95b0e5be3)
+        ;
+
+        
+    
+    
+            var circle_marker_a491c4bb5a63042e7bfc4dadc1139a3a = L.circleMarker(
+                [38.9362188, -77.0587712],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_666cf0cb65c1db35a9d5353f680eef04 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_160f1ea57707f219ff05c659bd903f75 = $(`&lt;div id=&quot;html_160f1ea57707f219ff05c659bd903f75&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 12.17.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 3549 Connecticut Ave NW/ Cleveland Park Metro&lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Re-enforcement that this public space must remain clear at all times due to safety concerns Rescheduled from 12/5 due to the cold weather alert&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 3     &lt;/div&gt;`)[0];
+                popup_666cf0cb65c1db35a9d5353f680eef04.setContent(html_160f1ea57707f219ff05c659bd903f75);
+            
+        
+
+        circle_marker_a491c4bb5a63042e7bfc4dadc1139a3a.bindPopup(popup_666cf0cb65c1db35a9d5353f680eef04)
+        ;
+
+        
+    
+    
+            var circle_marker_2dae5bcf7c96e28337dc78d8def35e9d = L.circleMarker(
+                [38.9171838, -77.0268253],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_24d151ae4bafb2a0ec9e259dc0361ef7);
+        
+    
+        var popup_e9f4d005ff5f0d48f29b28a5908dbc37 = L.popup({
+  &quot;maxWidth&quot;: 300,
+});
+
+        
+            
+                var html_e4ba353ade24844dad1e0572657b3605 = $(`&lt;div id=&quot;html_e4ba353ade24844dad1e0572657b3605&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;     &lt;b&gt;Date:&lt;/b&gt; 12.18.2025&lt;br&gt;     &lt;b&gt;Location:&lt;/b&gt; 2001 11th St NW &lt;br&gt;     &lt;b&gt;Type:&lt;/b&gt; Full Clean-up  Bio-hazard Removal Enforcement that this public space must remain clear at all times due to safety concerns Rescheduled from 12/9 due to the cold weather alert&lt;br&gt;     &lt;b&gt;Ward:&lt;/b&gt; 1     &lt;/div&gt;`)[0];
+                popup_e9f4d005ff5f0d48f29b28a5908dbc37.setContent(html_e4ba353ade24844dad1e0572657b3605);
+            
+        
+
+        circle_marker_2dae5bcf7c96e28337dc78d8def35e9d.bindPopup(popup_e9f4d005ff5f0d48f29b28a5908dbc37)
+        ;
+
+        
+    
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+        </div>
+    </div>
+</body>
+</html>
